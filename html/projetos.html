@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projetos | ONG Mãos Solidárias</title>
+
+  <meta
+    name="description"
+    content="Conheça nossos projetos, campanhas de doação e oportunidades de voluntariado."
+  >
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+  <script type="module" src="../js/spa.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Projetos solidários</h1>
+    <p>ONG Mãos Solidárias</p>
+
+    <nav class="navegacao" aria-label="Menu principal">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menu"
+      >☰</button>
+
+      <ul id="menu-principal" class="menu">
+        <li><a href="index.html">Início</a></li>
+
+        <li class="tem-submenu">
+          <button
+            class="submenu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="submenu-projetos"
+          >Projetos ▾</button>
+
+          <ul id="submenu-projetos" class="submenu">
+            <li>
+              <a href="projetos.html">Todos os projetos</a>
+            </li>
+            <li>
+              <a href="projetos.html#voluntariado">Voluntariado</a>
+            </li>
+            <li>
+              <a href="projetos.html#campanhas">Campanhas de doação</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="introducao">
+      <h2 id="introducao">Nossas frentes de atuação</h2>
+
+      <p>
+        Nossos projetos apoiam pessoas em situação de vulnerabilidade.
+        Você pode participar doando recursos ou dedicando seu tempo
+        às atividades de voluntariado.
+      </p>
+    </section>
+
+    <section aria-labelledby="voluntariado">
+      <h2 id="voluntariado">Trabalho voluntário</h2>
+
+      <p>
+        Os voluntários ajudam na organização e realização
+        das ações da ONG. As atividades incluem:
+      </p>
+
+      <ul>
+        <li>Separação e organização de alimentos e roupas.</li>
+        <li>Preparação de materiais para campanhas.</li>
+        <li>Apoio na distribuição de doações.</li>
+        <li>Divulgação dos projetos na comunidade.</li>
+      </ul>
+
+      <p>
+        Para participar, cadastre seu interesse. Nossa equipe
+        entrará em contato para conversar sobre sua disponibilidade
+        e os requisitos de cada atividade.
+      </p>
+
+      <a href="cadastro.html">Quero ser voluntário</a>
+    </section>
+
+    <section aria-labelledby="campanhas">
+      <h2 id="campanhas">Campanhas de doação</h2>
+
+      <div id="lista-campanhas"></div>
+
+      <template id="template-campanha">
+        <article>
+          <h3></h3>
+          <p></p>
+        </article>
+      </template>
+    </section>
+
+    <section aria-labelledby="como-doar">
+      <h2 id="como-doar">Como contribuir</h2>
+
+      <ol>
+        <li>Escolha a campanha que deseja apoiar.</li>
+        <li>
+          Entre em contato para confirmar as necessidades atuais
+          e as orientações de entrega ou contribuição financeira.
+        </li>
+        <li>
+          Combine a entrega dos itens ou solicite os dados
+          para realizar sua contribuição.
+        </li>
+      </ol>
+
+      <p>
+        E-mail:
+        <a href="mailto:contato@example.org">
+          contato@example.org
+        </a>
+      </p>
+
+      <p>
+        Este site é um projeto acadêmico de uma ONG fictícia.
+        Não realize pagamentos.
+      </p>
+    </section>
+
+    <section aria-labelledby="participar">
+      <h2 id="participar">Faça parte dessa iniciativa</h2>
+
+      <p>
+        Preencha o formulário para registrar seu interesse
+        em colaborar com nossos projetos.
+      </p>
+
+      <a href="cadastro.html">Quero colaborar</a>
+    </section>
+
+    <section aria-labelledby="titulo-feedback">
+      <h2 id="titulo-feedback">Participação nos projetos</h2>
+
+      <p>
+        <span class="badge">Projeto ativo</span>
+        <span class="badge badge-voluntario">
+          Vagas para voluntários
+        </span>
+      </p>
+
+      <div class="alerta" role="note">
+        <strong>Informação:</strong>
+        o cadastro registra seu interesse.
+        Esta demonstração não envia dados.
+      </div>
+
+      <button type="button" id="abrir-modal">
+        Como participar
+      </button>
+
+      <dialog
+        id="modal-participacao"
+        aria-labelledby="titulo-modal"
+        aria-describedby="descricao-modal"
+      >
+        <h2 id="titulo-modal">Como participar</h2>
+
+        <p id="descricao-modal">
+          Acesse a página de cadastro e preencha sua forma de colaboração.
+          Utilize dados fictícios nesta demonstração acadêmica.
+        </p>
+
+        <form method="dialog">
+          <button type="submit">Fechar</button>
+        </form>
+      </dialog>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ONG Mãos Solidárias.</p>
+  </footer>
+</body>
+</html>

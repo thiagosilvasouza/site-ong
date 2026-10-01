@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ONG Mãos Solidárias | Início</title>
+
+  <meta
+    name="description"
+    content="Conheça a ONG Mãos Solidárias, nossos projetos e como colaborar."
+  >
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+  <script type="module" src="../js/spa.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>ONG Mãos Solidárias</h1>
+
+    <nav class="navegacao" aria-label="Menu principal">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menu"
+      >☰</button>
+
+      <ul id="menu-principal" class="menu">
+        <li><a href="index.html">Início</a></li>
+
+        <li class="tem-submenu">
+          <button
+            class="submenu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="submenu-projetos"
+          >Projetos ▾</button>
+
+          <ul id="submenu-projetos" class="submenu">
+            <li><a href="projetos.html">Todos os projetos</a></li>
+            <li>
+              <a href="projetos.html#voluntariado">Voluntariado</a>
+            </li>
+            <li>
+              <a href="projetos.html#campanhas">Campanhas de doação</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="apresentacao">
+      <h2 id="apresentacao">Quem somos</h2>
+
+      <p>
+        A ONG Mãos Solidárias promove ações de apoio a pessoas
+        em situação de vulnerabilidade, reunindo voluntários
+        e doações para ajudar a comunidade.
+      </p>
+
+      <picture>
+        <source srcset="../imagens/acao-solidaria.webp" type="image/webp">
+        <img
+          src="../imagens/acao-solidaria.jpg"
+          alt="Pessoas unindo as mãos em um gesto de solidariedade"
+          width="1200"
+          height="801"
+        >
+      </picture>
+    </section>
+
+    <section aria-labelledby="missao">
+      <h2 id="missao">Nossa missão</h2>
+
+      <p>
+        Promover a solidariedade e contribuir para melhores
+        condições de vida por meio de projetos sociais.
+      </p>
+    </section>
+
+    <section aria-labelledby="contato">
+      <h2 id="contato">Entre em contato</h2>
+
+      <address>
+        <p>
+          E-mail:
+          <a href="mailto:contato@example.org">
+            contato@example.org
+          </a>
+        </p>
+
+        <p>
+          Telefone:
+          <a href="tel:+5513999999999">
+            (13) 99999-9999
+          </a>
+        </p>
+
+        <p>Endereço: Rua Exemplo, 123 — Praia Grande/SP</p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ONG Mãos Solidárias.</p>
+  </footer>
+</body>
+</html>
