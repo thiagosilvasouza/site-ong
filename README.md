@@ -49,3 +49,21 @@ Execute o projeto pelo Live Server e confira:
 8. Recuperação da preferência após reabrir o cadastro.
 
 Registre eventuais falhas antes de concluir a validação.
+## Build de produção
+
+Pré-requisito: Node.js com npm instalado.
+
+Para instalar as dependências após clonar o projeto:
+
+npm ci
+
+Para gerar a versão de produção:
+
+npm run build
+
+A build utiliza esbuild para agrupar e minificar JavaScript,
+clean-css para minificar CSS e html-minifier-terser para HTML.
+As imagens são copiadas para dist/imagens.
+
+Para testar, abra dist/html/index.html pelo Live Server.
+A pasta dist é gerada automaticamente e não é versionada.
