@@ -1,0 +1,27 @@
+{
+  "name": "site-ong",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico de uma ONG fictícia, desenvolvido com HTML5,\r CSS e JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagosilvasouza/site-ong.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thiagosilvasouza/site-ong/issues"
+  },
+  "homepage": "https://github.com/thiagosilvasouza/site-ong#readme",
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "esbuild": "^0.28.2",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
